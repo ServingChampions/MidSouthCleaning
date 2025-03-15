@@ -36,34 +36,31 @@ Dark blue #2C5A91
     ========================================
   */
   
-  body {
-    background: white;
-    color: black;
-    margin: 0 5px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    color: #2C5A91; /* Primary color */
-  }
+body {
+  background: white;
+  color: black;
+  margin: 0 5px;
+  font-family: "Henderson Slab", serif; /* Apply globally */
+}
 
-  h2, h3, h4, h5 {
-    font-size: 30px;
-    color: #2C5A91; /* Primary color */
-  }
-  
+h1, h2, h3, h4, h5 {
+  font-size: 30px;
+  color: #2C5A91; /* Primary color */
+  font-family: "Henderson Slab", serif;
+}
 
-  p {
-    font-size: 15px;
-    font-weight: 381;
-    padding: 5px 0;
-    color: black
-  }
+p {
+  font-size: 15px;
+  font-weight: 381;
+  padding: 5px 0;
+  color: black;
+  font-family: "Henderson Slab", serif;
+}
+
   
   /* Header Styling */
 .primary-header {
-  background-color: #8FCCF0; /* Background color */
-  color: white;
+  background-color: rgba(18, 18, 18, 0.8); /* Background color */
   padding: 10px 0; /* Vertical padding */
 }
 
@@ -77,8 +74,13 @@ Dark blue #2C5A91
 }
 
 .headerlogo {
-  max-height: 250px; /* Adjust as needed */
+  max-height: 100px; /* Adjust as needed */
   width: auto; /* Maintain aspect ratio */
+  padding-left: 15px;
+}
+
+.primary-nav{
+  padding-right: 50px;
 }
 
 .primary-nav ul {
@@ -95,20 +97,36 @@ Dark blue #2C5A91
 .primary-nav a {
   color: white; /* Link color */
   text-decoration: none; /* Remove underline */
-  font-family: 'Lato', sans-serif; /* Font style */
-  font-weight: 300; /* Light font weight */
+  font-weight: 5000; /* Light font weight */
   transition: color 0.3s; /* Smooth hover transition */
 }
 
+.call-button {
+  background-color: #8FCCF0; /* Blue color */
+  color: black !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 10px;
+  transition: background 0.3s;
+}
+
+.call-button:hover {
+  background-color: #1B3E6E; /* Darker blue on hover */
+  color: white !important;
+}
+
+
 .primary-nav a:hover {
-  color: #ffffff; /* Hover color */
+  color: #2C5A91; /* Hover color */
 }
 
 /* Footer Contact Info Styling */
 .footer-contact-info {
   text-align: center;
   margin-top: 20px;
-  background-color: #8FCCF0; /* Regal's primary color */
+  background-color: rgba(18, 18, 18, 0.8);
   padding: 20px;
   border-radius: 8px; /* Optional: Add rounded corners */
 }
@@ -120,7 +138,7 @@ Dark blue #2C5A91
 }
 
 .footer-contact-info a {
-  color: #fff; /* White text */
+  color: #8FCCF0; /* White text */
   text-decoration: none;
 }
 
@@ -130,7 +148,6 @@ Dark blue #2C5A91
 
 /* Footer Styling */
 .primary-footer {
-  background-color: #8FCCF0; /* Match header background color */
   padding: 20px 0; /* Add padding for spacing */
   text-align: center; /* Center footer content */
 }
@@ -256,36 +273,19 @@ Dark blue #2C5A91
     ========================================
   */
   
-/* Video Section */
-.video-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.video-container {
-  width: 60%; /* Default width for all devices */
-  max-width: 1200px; /* Larger cap for desktops */
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  padding-bottom: 35%; /* 16:9 Aspect Ratio */
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the video fills the space without black bars */
-}
-
-
+  .homecover {
+    position: relative;
+    width: 100vw; /* Ensure it takes up the full viewport width */
+    height: 30vh; /* Thin sliver height */
+    overflow: hidden;
+  }
+  
+  .cover-image {
+    width: 100vw; /* Force full viewport width */
+    height: 100%;
+    object-fit: cover; /* Fill container without white space or distortion */
+  }
+  
 
 .overlay-text {
   margin-top: 20px;
@@ -293,6 +293,18 @@ Dark blue #2C5A91
   color: white;
   text-align: center;
 }
+
+.precision-text {
+  background-color: rgba(18, 18, 18, 0.8); /* Dark semi-transparent background */
+  color: #ffffff; /* White text */
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px 0; /* Vertical padding for spacing */
+  margin: 0; /* Remove any margin to avoid gaps */
+  width: 100%; /* Ensure it stretches the full width */
+}
+
 
 .hero {
   background: url('assets/stock/stock1.jpg') center/cover no-repeat;
@@ -314,99 +326,173 @@ Dark blue #2C5A91
 .hero-content .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background: #8FCCF0;
+  background: #2C5A91;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+}
+
+/* Services Section Styling */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
 }
 
 .services h2 {
-  border-bottom: 2px solid #666;
-  padding-bottom: 10px;
+  color: #2C5A91;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
-.services, .why-choose-us, .testimonial, .cta {
-  padding: 40px 20px;
+.service-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
   text-align: center;
 }
 
-.service-grid, .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.service-item, .feature-item {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.service-item img, .feature-item img {
+.service-item img {
   width: 100%;
-  border-radius: 5px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background: #8FCCF0;
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
+.service-item h3 {
+  background-color: #2C5A91;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
 }
 
-blockquote {
-  font-style: italic;
-  color: #666;
+/* Who We Are Section */
+.who-we-are {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
-
-
-/* Subscribe Section */
-
-.subscribe-section {
-  background-color: white; /* Light background for contrast */
-  padding: 40px 0; /* Add padding for space */
-  text-align: center; /* Center-align the content */
+.who-we-are h2 {
+  color: black;
+  font-size: 32px;
+  font-weight: 550;
+  margin-bottom: 20px;
 }
 
-.subscribe-section p {
-  margin-bottom: 20px; /* Space below the paragraph */
+.who-we-are-image img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.subscribe-form {
+.who-we-are-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the form fields */
+  align-items: center;
 }
 
-.subscribe-form input {
-  padding: 10px;
-  margin: 5px 0; /* Space between inputs */
+.who-we-are-content h4 {
+  color: #2C5A91;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checklist {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+.checklist img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Paragraph Styling */
+.checklist p {
+  color: black;
   font-size: 16px;
-  width: 300px; /* Fixed width for inputs */
-  border: 1px solid #ccc; /* Light border for inputs */
-  border-radius: 5px; /* Rounded corners */
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
 }
 
-.subscribe-form button {
-  padding: 10px 20px;
-  background-color: #8FCCF0; /* Primary color */
-  color: white;
-  border: none;
-  border-radius: 5px; /* Rounded button */
+/* Closing Section */
+.closing-section {
+  width: 100%;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #2C5A91;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-bar p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Contact Item Styling */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 50px;
+}
+
+.contact-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-item a {
+  color: #8FCCF0;
   font-size: 16px;
-  cursor: pointer;
-  margin-top: 10px; /* Space above the button */
-  transition: background-color 0.3s; /* Smooth transition for hover */
+  text-decoration: none;
 }
 
-.subscribe-form button:hover {
-  background-color: #577d9c; /* Slightly darker shade on hover */
+.contact-item a:hover {
+  text-decoration: underline;
 }
+
+/* Logo Styling */
+.logo-item img {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+}
+
+
+
 
 
 /*
@@ -520,7 +606,7 @@ connect
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #8FCCF0;
+  background-color: #2C5A91;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
