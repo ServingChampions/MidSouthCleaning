@@ -518,6 +518,15 @@ connect
   ========================================
 */
 
+.connectcover img {
+  width: 60%; /* Adjust the percentage to make it smaller or larger */
+  max-width: 400px; /* Set a reasonable max width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  padding-top: 25px;
+}
+
 /* Contact Header Section */
 .contact-header {
   max-width: 600px;
