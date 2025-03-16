@@ -176,7 +176,6 @@ p {
 
 /* Footer Navigation */
 .footer-nav {
-  background-color: ; /* White background for the nav */
   padding: 20px 0; /* Add padding for spacing */
   text-align: center; /* Center the text */
 }
@@ -276,16 +275,17 @@ p {
   
   .homecover {
     position: relative;
-    width: 100vw; /* Ensure it takes up the full viewport width */
-    height: 30vh; /* Thin sliver height */
+    width: 100%; /* Use 100% to prevent overflow from the scrollbar */
+    height: 60vh; /* Thin sliver height */
     overflow: hidden;
   }
   
   .cover-image {
-    width: 100vw; /* Force full viewport width */
+    width: 100%; /* Match container width instead of viewport */
     height: 100%;
     object-fit: cover; /* Fill container without white space or distortion */
   }
+  
   
 
 .overlay-text {
@@ -337,7 +337,7 @@ p {
 .services {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  background-color: white;
 }
 
 .services h2 {
@@ -381,7 +381,7 @@ p {
 .who-we-are {
   padding: 50px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: white;
 }
 
 .who-we-are h2 {
@@ -509,6 +509,139 @@ process
 work
   ========================================
 */
+
+.work-section {
+  padding: 20px;
+  background-color: white; /* Light background for contrast */
+  text-align: center;
+  font-size: 18px;
+  color: #121212; /* Dark text for readability */
+}
+
+.work-section .highlight {
+  color: #2C5A91; /* Dark blue color for emphasis */
+  font-weight: bold;
+}
+
+.workitems {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.workitems h2 {
+  color: #2C5A91; /* Dark blue color */
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px; /* Add more gap between grid items */
+  justify-content: center;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.work-item h3 {
+  background-color: #2C5A91; /* Dark blue box */
+  color: #8FCCF0; /* Light blue text */
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 12px; /* Add some separation from the image */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding does not increase width */
+}
+
+
+.detailed-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.detailed-section h2 {
+  color: #2C5A91; /* Dark blue color */
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.detailed-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detailed-section h3 {
+  color: #2C5A91;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.detailed-section p {
+  color: #2C5A91;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.detailed-section h4 {
+  color: #2C5A91;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+
+
+.divider {
+  height: 6px;
+  background-color: #2C5A91;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 3px;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+}
+
+.service-list li {
+  color: #2C5A91;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 18px;
+  position: relative;
+  text-align: center; /* Center text */
+  width: auto; /* Adjust width based on content */
+}
+
+.service-list li::before {
+  content: '✔';
+  color: #2C5A91;
+  position: absolute;
+  left: -5px; /* Adjust to keep checkmark aligned properly */
+  font-size: 18px;
+}
 
 
 
@@ -696,7 +829,6 @@ responsive
     display: none; /* Hidden by default */
     flex-direction: column;
     width: 100%;
-    background-color: ; /* Match the header background */
     text-align: center; /* Center text in the nav */
   }
 
@@ -720,6 +852,25 @@ responsive
   .hamburger {
     display: block; /* Show hamburger menu */
   }
+
+
+  .homecover {
+    position: relative;
+    width: 100%; /* Use 100% to prevent overflow */
+    height: 30vh; /* Adjust height for mobile view */
+    overflow: hidden;
+  }
+
+  .cover-image {
+    width: 100%; /* Match container width */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+  }
+
+  .service-list {
+    padding: 0 10px;
+  }
+
 }
 
   
