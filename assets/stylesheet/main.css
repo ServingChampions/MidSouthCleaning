@@ -815,6 +815,12 @@ responsive
 
 /* Responsive Styles for Header */
 @media (max-width: 768px) {
+
+  .primary-nav li {
+    padding-left: 65px; /* Adjust the value as needed */
+    padding-right: 20px; /* Optional – balances the padding */
+  }
+
   .header-container {
     flex-direction: column;
     align-items: center; /* Center header items */
