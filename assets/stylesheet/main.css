@@ -1066,3 +1066,15 @@ responsive
     width: 100px;
   }
 }
+
+@media (max-width: 768px) {
+  .sc-footer {
+    font-size: 6px; /* Reduce font size for mobile */
+    padding-top: 2px; /* Slightly reduce padding */
+  }
+
+  .sc-footer a img {
+    width: 15px; /* Reduce icon size */
+    height: 15px;
+  }
+}
