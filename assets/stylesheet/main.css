@@ -503,6 +503,73 @@ process
 */
 
 
+/* Style for the section */
+.ourprocess {
+  text-align: center; /* Centers the heading */
+  padding: 20px;
+}
+
+/* Style for the container to center the image */
+.process-table-container {
+  display: flex;
+  justify-content: center; /* Centers the image */
+  align-items: center;
+  width: 100%;
+  padding: 20px 0; /* Adds space above and below */
+}
+
+/* Style for the table image */
+.process-table {
+  width: 100%; /* Makes the image span the full width */
+  max-width: 1200px; /* Prevents it from getting too large */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes any extra spacing below */
+}
+
+/* Style for the section */
+.icon-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Italicized description text */
+.icon-description {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #555; /* Slightly muted text color */
+}
+
+/* Grid layout for icons */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between items */
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* Adjust for layout balance */
+  margin: 0 auto;
+}
+
+/* Icon styles */
+.icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-item img {
+  width: 100px; /* Set icon size */
+  height: auto;
+}
+
+/* Hover effect */
+.icon-item:hover {
+  transform: scale(1.1); /* Slight zoom-in on hover */
+}
+
+
+
 
 /*
   ========================================
