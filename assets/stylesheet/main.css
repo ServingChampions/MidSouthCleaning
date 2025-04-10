@@ -333,6 +333,10 @@ p {
   border-radius: 5px;
 }
 
+strong {
+  font-weight: bold;
+}
+
 /* Services Section Styling */
 .services {
   text-align: center;
@@ -379,7 +383,7 @@ p {
 
 /* Who We Are Section */
 .who-we-are {
-  padding: 50px 20px;
+  padding: 20px 20px;
   text-align: center;
   background-color: white;
 }
@@ -441,14 +445,14 @@ p {
 
 /* Top Bar */
 .top-bar {
-  background-color: #2C5A91;
+  background-color: #6a8bb2;
   padding: 20px;
   text-align: center;
 }
 
 .top-bar p {
-  color: #000000;
-  font-size: 20px;
+  color: white;
+  font-size: 25px;
   font-weight: 500;
   margin: 0;
 }
@@ -585,6 +589,11 @@ work
   color: #121212; /* Dark text for readability */
 }
 
+.work-section p{
+  font-size: 18px;
+}
+
+
 .work-section .highlight {
   color: #2C5A91; /* Dark blue color for emphasis */
   font-weight: bold;
@@ -621,8 +630,8 @@ work
 }
 
 .work-item h3 {
-  background-color: #2C5A91; /* Dark blue box */
-  color: #8FCCF0; /* Light blue text */
+  background-color: #12418a; /* Dark blue box */
+  color: #8ecef1; /* Light blue text */
   padding: 12px;
   width: 100%;
   text-align: center;
@@ -1078,3 +1087,4 @@ responsive
     height: 15px;
   }
 }
+
