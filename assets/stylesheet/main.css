@@ -382,6 +382,16 @@ strong {
   border-radius: 0 0 8px 8px;
 }
 
+.service-grid a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Keep text color as defined */
+  display: block; /* Ensure the entire service-item is clickable */
+}
+
+.service-grid a h3 {
+  text-decoration: none; /* Extra safety to remove any underline */
+}
+
 /* Who We Are Section */
 .who-we-are {
   padding: 20px 20px;
