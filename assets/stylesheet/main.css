@@ -384,12 +384,13 @@ strong {
 
 .service-grid a {
   text-decoration: none;  /* Remove underline from entire link */
-  color: inherit;         /* Keep text color */
+  color: inherit;         /* Keep inherited color */
+  display: block;         /* Make the whole box clickable */
 }
 
 .service-grid a h3 {
-  text-decoration: none;  /* Ensure no underline specifically on h3 */
-  color: inherit;         /* Keep your h3 color */
+  text-decoration: none;  /* Remove underline */
+  color: white;           /* Force the h3 text to stay white */
 }
 
 /* Who We Are Section */
